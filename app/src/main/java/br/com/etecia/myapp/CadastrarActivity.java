@@ -40,7 +40,7 @@ public class CadastrarActivity extends AppCompatActivity {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(CadastrarActivity.this);
                 builder.setTitle("Sistema de cadastro");
-                builder.setMessage("Cadastrado com sucesso!");
+                builder.setMessage("Cadastrado com sucesso💋!");
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
