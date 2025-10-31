@@ -17,7 +17,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class LoginActivity extends AppCompatActivity {
     TextInputEditText txtEmail, txtSenha;
-    MaterialButton btnEntrar;
+    MaterialButton btnEntrar, btnCadastrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,15 @@ public class LoginActivity extends AppCompatActivity {
         txtEmail = findViewById(R.id.txtEmail);
         txtSenha = findViewById(R.id.txtSenha);
         btnEntrar = findViewById(R.id.btnEntrar);
+        btnCadastrar = findViewById(R.id.btnCadastrar);
 
+        btnCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), CadastrarActivity.class));
+                finish();
+            }
+        });
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
