@@ -10,21 +10,22 @@
     tools:context=".RecuperarSenhaActivity">
 
     <ImageView
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_margin="10dp"
         android:tint="#941313"
-        android:src="@drawable/carro"
+        android:src="@drawable/locked"
         android:scaleType="centerCrop"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="10sp"
+        android:layout_marginBottom=
         android:text="Recuperar senha"
         android:textColor="#941313"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:fontFamily="@font/font"
         android:textStyle="bold"
         />
@@ -59,8 +60,9 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnCadastrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:text="Enviar código"
         android:fontFamily="@font/fonte3"
         android:textSize="20dp"
