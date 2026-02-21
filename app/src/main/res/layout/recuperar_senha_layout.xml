@@ -51,7 +51,6 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtEmail"
-
             android:layout_width="match_parent"
             android:inputType="textEmailAddress"
             android:textColor="@color/white"
@@ -63,7 +62,7 @@
         android:layout_gravity="center"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:text="Enviar código"
+        android:text="Enviar"
         android:fontFamily="@font/fonte3"
         android:textSize="20dp"
         android:layout_marginBottom="10sp"
