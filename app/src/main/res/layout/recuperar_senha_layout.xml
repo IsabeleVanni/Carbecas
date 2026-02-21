@@ -13,27 +13,16 @@
         android:layout_gravity="center"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:tint="#941313"
         android:src="@drawable/locked"
         android:scaleType="centerCrop"
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom=
-        android:text="Recuperar senha"
-        android:textColor="#941313"
-        android:textSize="20dp"
-        android:fontFamily="@font/font"
-        android:textStyle="bold"
-        />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:layout_margin="5dp"
         android:text="Para recuperar sua senha, insira o email usado no cadastro."
         android:textColor="#7777"
@@ -44,7 +33,7 @@
         android:layout_gravity="center"
         app:startIconDrawable="@drawable/email"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10sp"
+        android:layout_marginBottom="20sp"
         android:hint="Insira seu email"
         app:endIconMode="clear_text"
         android:layout_height="wrap_content">
@@ -52,6 +41,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtEmail"
             android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:inputType="textEmailAddress"
             android:textColor="@color/white"
             android:layout_height="wrap_content" />

@@ -34,8 +34,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="1dp"
-
-
         android:layout_margin="40dp"    >
 
     <EditText
