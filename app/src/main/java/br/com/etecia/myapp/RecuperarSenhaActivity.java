@@ -15,7 +15,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class RecuperarSenhaActivity extends AppCompatActivity {
 
-    MaterialButton btnEnviar;
+    MaterialButton btnEnviarR;
     TextInputEditText txtRecupera;
 
     @Override
@@ -28,9 +28,9 @@ public class RecuperarSenhaActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btnEnviar = findViewById(R.id.btnEnviar);
+        btnEnviarR = findViewById(R.id.btnEnviarR);
 
-        btnEnviar.setOnClickListener(new View.OnClickListener() {
+        btnEnviarR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), CodigoSenhaActivity.class));

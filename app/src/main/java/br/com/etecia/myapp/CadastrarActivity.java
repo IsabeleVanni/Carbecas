@@ -17,7 +17,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class CadastrarActivity extends AppCompatActivity {
 
-    MaterialButton btnEnviar;
+    MaterialButton btnEnviarC;
 
     private AlertDialog alertDialog;
 
@@ -32,9 +32,9 @@ public class CadastrarActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btnEnviar = findViewById(R.id.btnCadastrar);
+        btnEnviarC = findViewById(R.id.btnEnviarC);
 
-        btnEnviar.setOnClickListener(new View.OnClickListener() {
+        btnEnviarC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
