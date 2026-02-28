@@ -70,10 +70,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
+        android:id="@+id/txtRecupera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20sp"
         android:text="Esqueceu sua senha? Clique aqui."/>
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnEntrar"

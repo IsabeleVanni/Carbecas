@@ -1,8 +1,10 @@
 package br.com.etecia.myapp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,8 +18,11 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class LoginActivity extends AppCompatActivity {
+
+    TextView txtRecupera;
     TextInputEditText txtEmail, txtSenha;
     MaterialButton btnEntrar, btnCadastrar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        txtRecupera = findViewById(R.id.txtRecupera);
         txtEmail = findViewById(R.id.txtEmail);
         txtSenha = findViewById(R.id.txtSenha);
         btnEntrar = findViewById(R.id.btnEntrar);
@@ -41,6 +47,15 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        txtRecupera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RecuperarSenhaActivity.class));
+                finish();
+            }
+        });
+
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

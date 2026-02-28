@@ -32,7 +32,7 @@ public class CadastrarActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btnEnviar = findViewById(R.id.btnEnviar);
+        btnEnviar = findViewById(R.id.btnCadastrar);
 
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
