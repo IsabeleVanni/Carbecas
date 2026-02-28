@@ -14,10 +14,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
 
 public class NovasenhaActivity extends AppCompatActivity {
 
     MaterialButton btnEnviarNS;
+
+    TextInputEditText txtConfSenha, txtSenha;
 
     private AlertDialog alertDialog;
 
@@ -32,6 +35,23 @@ public class NovasenhaActivity extends AppCompatActivity {
             return insets;
         });
         btnEnviarNS = findViewById(R.id.btnEnviarNS);
+
+        btnEnviarNS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String csenha, senha;
+                csenha = txtConfSenha.getText().toString();
+                senha = txtSenha.getText().toString();
+
+                if (csenha.equals("1")&&senha.equals("1")){
+                    startActivity(new Intent(getApplicationContext(),MenuPrincipalActivity.class));
+                    finish();
+
+                }else{
+                    Toast.makeText(getApplicationContext(),"As senhas não coincidem.",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         btnEnviarNS.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,5 +73,7 @@ public class NovasenhaActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
+
+
     }
 }
